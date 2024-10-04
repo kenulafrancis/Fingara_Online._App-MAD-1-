@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:online_reservations_for_sports/appPages/home/sport_detail_widget.dart';
 
 class SportCard extends StatelessWidget {
+  final int id;
   final String title;
   final String imagePath;
   final String description;
 
-  const SportCard({
+  const SportCard({super.key,
+    required this.id,
     required this.title,
     required this.imagePath,
     required this.description,
@@ -18,7 +20,9 @@ class SportCard extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => SportDetailPage(title: title)),
+          MaterialPageRoute(
+            builder: (context) => SportDetailPage(facilityId: id),
+          ),
         );
       },
       child: Card(

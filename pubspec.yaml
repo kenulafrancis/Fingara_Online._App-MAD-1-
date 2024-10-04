@@ -41,6 +41,13 @@ dependencies:
   cupertino_icons: ^1.0.6
 
   flutter_native_splash: ^2.4.0
+  http: ^1.2.2
+  shared_preferences: ^2.2.3
+  flutter_secure_storage: ^9.2.2
+  geolocator: ^12.0.0
+  url_launcher: ^6.3.0
+  google_maps_flutter: ^2.6.1
+  battery_plus: ^6.0.2
 
 dev_dependencies:
   table_calendar: ^3.1.2
@@ -54,7 +61,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

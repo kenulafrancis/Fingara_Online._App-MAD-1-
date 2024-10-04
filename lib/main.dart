@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:online_reservations_for_sports/Themes/theme.dart';
-import 'package:online_reservations_for_sports/appPages/Navigation/bottom_navigation_widget.dart';
 import 'package:online_reservations_for_sports/appPages/availability/availability_check_page.dart';
 import 'package:online_reservations_for_sports/appPages/bookingHistroy/booking_history_page.dart';
+import 'package:online_reservations_for_sports/appPages/home/home2.dart';
 import 'package:online_reservations_for_sports/appPages/home/homePage.dart';
 import 'package:online_reservations_for_sports/appPages/login/Login_Fingara.dart';
 import 'package:online_reservations_for_sports/appPages/login/WelcomeBack.dart';
@@ -23,12 +23,11 @@ class OnlineReservation extends StatelessWidget {
       darkTheme: AppThemes.darkTheme,
       themeMode: ThemeMode.system,
       initialRoute: Welcome.name,
-      home: const BottomNavigation(
-        child: HomePage(),
-      ),
       routes: {
-        Welcome.name: (context) => Welcome(),
+        Welcome.name: (context) => const Welcome(),
+
         Login.name: (context) => const Login(),
+        Home2Page.name: (context) => const Home2Page(),
         HomePage.name: (context) => const HomePage(),
         AvailabilityCheckPage.name: (context) => const AvailabilityCheckPage(),
         PaymentPortal.name: (context) => PaymentPortal(),
@@ -37,4 +36,3 @@ class OnlineReservation extends StatelessWidget {
     );
   }
 }
-//hello

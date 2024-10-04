@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
         child: SportCard(
           title: 'Tennis',
           imagePath: 'assets/images/tennis2.jpg',
-          description: 'Play tennis with us!',
+          description: 'Play tennis with us!', id: 1,
         ),
       ),
       const SizedBox(width: 10), // Add some spacing between cards in landscape mode
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
         child: SportCard(
           title: 'Badminton',
           imagePath: 'assets/images/badminton2.jpg',
-          description: 'Join our badminton games!',
+          description: 'Join our badminton games!', id: 2,
         ),
       ),
       const SizedBox(width: 10), // Add some spacing between cards in landscape mode
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
         child: SportCard(
           title: 'Squash',
           imagePath: 'assets/images/squash2.jpg',
-          description: 'Enjoy squash at our club!',
+          description: 'Enjoy squash at our club!', id: 3,
         ),
       ),
     ];

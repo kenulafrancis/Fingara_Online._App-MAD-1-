@@ -26,7 +26,7 @@ class _LoginState extends State<Login> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 loginHeaderWidget(size: size),
-                const loginForm(),
+                const LoginForm(),
                 const LoginFooterWidget()
               ],
             ),

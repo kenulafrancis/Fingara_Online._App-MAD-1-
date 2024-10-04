@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:online_reservations_for_sports/colors/colors.dart';
+import 'package:online_reservations_for_sports/components/battery_percentage_widget.dart';  // Import the Battery Percentage Widget
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double deviceHeight;
 
-  const CustomAppBar({required this.deviceHeight});
+  const CustomAppBar({super.key, required this.deviceHeight});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('Fingara Sports Booking', style: TextStyle(color: WhiteColor)),
+      title: const Text(
+        'Fingara Sports Booking',
+        style: TextStyle(color: WhiteColor),
+      ),
       centerTitle: true,
       actions: [
+        BatteryPercentageWidget(),  // Add the Battery Percentage Widget here
         IconButton(
           icon: const Icon(Icons.notifications),
           onPressed: () {},
